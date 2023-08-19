@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table Example</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div class="space">
+    <span class="heading">Team Members</span>
+    <button id="addButton">Add Members <span class="plus">+</span></button>
+  </div>
+  <div class="main">
+    <label for="statusFilter">Filter by Status:</label>
+    <select id="statusFilter" class="custom-select" multiple>
+      <option value="active">Active</option>
+      <option value="inactive">Inactive</option>
+    </select>
+  </div>
+  <div class="main">
+    <label for="companyFilter">Filter by Company:</label>
+    <select id="companyFilter" class="custom-select" multiple>
+      <option value="select-all">Select All</option>
+    </select>
+  </div>
+  <table id="dataTable">
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Name</th>
+        <th>Company</th>
+        <th>Status</th>
+        <th>Last Updated</th>
+        <th>Notes</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="tableBody">
+    </tbody>
+  </table>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>
